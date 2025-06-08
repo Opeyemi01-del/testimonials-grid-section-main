@@ -1,0 +1,134 @@
+ @font-face{
+    font-family: kenfont;
+    src:url(Sansita/Sansita-Italic.ttf);
+ }
+ 
+ 
+ 
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ body{
+    background-color:  hsl(214, 17%, 92%);
+    padding: 50px;
+ }
+.container{
+    display:grid;
+    grid-gap: 20px;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:300px 300px; 
+    grid-template-areas: 'a a b c'
+                         'd e e c';
+}
+.content1{
+    box-shadow:0 0 30px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color:hsl(263, 55%, 52%) ;
+    grid-area: a;
+
+}
+.content2{
+    box-shadow:0 0 20px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: hsl(217, 19%, 35%) ;
+    grid-area: b;
+}
+.content3{
+    box-shadow:0 0 20px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color:  hsl(0, 0%, 100%);
+    grid-area: d;
+}
+.content4{
+    box-shadow:0 0 20px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color:hsl(219, 29%, 14%) ;
+    grid-area: e;
+}
+.content5{
+    box-shadow:0 0 20px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+grid-area: c;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+}
+
+h1{
+    font-weight: 600;
+  font-size: medium;
+  font-family: kenfont;
+  padding-top: 20px;
+  color:hsl(0, 0%, 81%);
+}
+
+P{
+    font-weight:500 ;
+    color:hsl(214, 17%, 92%);
+    padding-top: 5px;
+font-family: kenfont;
+font-size: medium;
+}
+
+#bold {
+    color: hsl(224, 10%, 45%);
+}
+
+#grey{
+    color: hsl(217, 19%, 35%)
+}
+  @media (max-width:460px) {
+    .container{
+   display: flex;
+   flex-direction: column;
+
+   justify-content: center;
+   align-items: center;
+
+    }
+   .content1{
+    padding: 10px;
+      
+       height: 500px ;
+   }
+   .content2{
+    padding:10px;
+   
+    height: 400px;
+   }
+   .content3{
+    padding: 10px;
+    
+  height: 500px;
+   }
+   .content4{
+    padding: 10px;
+    
+    height: 400px;
+   }
+   .content5{
+    padding: 10px;
+    
+    height: 600px;
+   }
+  }
